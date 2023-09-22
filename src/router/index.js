@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from "vue-router"
 const routes = [
   {
     name: 'init',
-    path: '/mi-babyShower',
+    path: '/mathi.io',
     component: () => import('@/components/Wellcome.vue')
   },
 ]

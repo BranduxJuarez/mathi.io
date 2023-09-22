@@ -10,7 +10,7 @@ export default defineConfig({
   define: {
     'process.env': {}
   },
-  base: '/mi-babyShower/',
+  base: '/mathi.io/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
