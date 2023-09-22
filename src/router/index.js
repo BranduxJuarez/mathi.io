@@ -4,14 +4,9 @@ import { createRouter, createWebHistory } from "vue-router"
 const routes = [
   {
     name: 'init',
-    path: '/kirsti-brandux',
+    path: '/mi-babyShower',
     component: () => import('@/components/Wellcome.vue')
   },
-  {
-    name: 'home',
-    path: '/kirsti-brandux/home',
-    component: () => import('@/views/Home.vue')
-  }
 ]
 
 const router = createRouter({

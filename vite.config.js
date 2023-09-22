@@ -10,8 +10,7 @@ export default defineConfig({
   define: {
     'process.env': {}
   },
-  base: '/kirsti-brandux/',
-  // base: process.env.NODE_ENV === '/kirsti-brandux/' ? '/repo-name/' : './',
+  base: '/mi-babyShower/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
