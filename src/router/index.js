@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router"
 
 const routes = [
   {
-    name: 'home',
+    name: 'init',
     path: '/mathi.io',
     component: () => import('@/components/Wellcome.vue')
   },
