@@ -103,6 +103,7 @@ import { useRouter } from 'vue-router'
 const state = useState()
 const couples = ref(['Soy Mathías'])
 const weddingDate = ref('Noviembre, 11 del 2023')
+const isPlayed = ref(true)
 
 const openInvitation = () => {
   console.log('aaaaaa')
