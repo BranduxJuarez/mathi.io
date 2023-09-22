@@ -94,16 +94,12 @@ width: 50% !important;
 </template>
 
 <script setup>
-
 import { ref } from 'vue'
 import { watch } from 'vue'
-import { computed } from 'vue'
 import { useState } from '@/stores/state.js'
-import { useRouter } from 'vue-router'
 const state = useState()
 const couples = ref(['Soy Mathías'])
 const weddingDate = ref('Noviembre, 11 del 2023')
-const isPlayed = ref(true)
 
 const openInvitation = () => {
   console.log('aaaaaa')
