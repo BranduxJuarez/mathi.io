@@ -1,0 +1,26 @@
+{
+	"couples": [
+		{
+			"name": "Brandux Didier Juarez Avila",
+			"sosmed": [
+				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
+				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
+				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+			],
+			"parents": ["Ramon Juarez", "Marlene Avila"],
+			"thumb": "couples/couple-male.jpg",
+			"address": "La Curva"
+		},
+		{
+			"name": "Kirsti Edit Martinez Moreno",
+			"sosmed": [
+				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
+				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
+				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+			],
+			"parents": ["Jose Martinez", "Julie Moreno"],
+			"thumb": "couples/couple-female.jpg",
+			"address": "La Curva"
+		}
+	]
+}
