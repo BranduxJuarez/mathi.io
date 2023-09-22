@@ -98,6 +98,7 @@ const router = useRouter()
 const couples = ref(['Soy Mathías'])
 const weddingDate = ref('Noviembre, 11 del 2023')
 const isOpenInvitation = ref(false)
+state.isAudioPlay = true
 const openInvitation = () => {
 
   console.log('aaaaaa')
