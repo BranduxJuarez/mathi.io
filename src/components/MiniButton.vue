@@ -27,7 +27,7 @@ import { useState } from '@/stores/state.js'
 
 const state = useState()
 const audioEl = ref(null)
-const isPlayed = ref(false)
+const isPlayed = ref(true)
 const isAudioPlay = computed(() => state.isAudioPlay)
 const audioClick = () => isPlayed.value = !isPlayed.value
 const audioAction = () => isPlayed.value ? audioEl.value.play() : audioEl.value.pause()
