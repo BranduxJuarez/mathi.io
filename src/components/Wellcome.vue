@@ -34,7 +34,7 @@
 .superiorDerecha {
 width: 35% !important;
 }
-.esquinaDerecha {
+.esquinaIzquierda {
 width: 50% !important;
 
 }
@@ -42,21 +42,28 @@ width: 50% !important;
 @media only screen and (max-width: 600px) {
   /* For tablets: */
   .superiorIzquierda {
-    width: 40% !important;
+    width: 30% !important;
+  left: 2rem;
+
   }
 
   .superiorDerecha {
-    width: 49% !important;
+    width: 60% !important;
+  }
+
+  .esquinaDerecha {
+  width: 80% !important;
+
   }
 }
 </style>
 <template>
-  <section :class="isOpenInvitation ? 'close-page' : ''" class="w-full h-screen bg-slate-100 min-h-screen fixed inset-0 grid place-items-center z-50 bg-texture bg-cover">
+  <section  class="w-full h-screen bg-slate-100 min-h-screen fixed inset-0 grid place-items-center z-50 bg-texture bg-cover">
     <!-- Frames -->
     <img class="frame top-0 left-0 animate__animated animate__fadeInLeft superiorIzquierda" src="@/assets/images/frame-mirror.png" alt="frame" >
     <img class="frame top-0 right-0 animate__animated animate__fadeInRight superiorDerecha" src="@/assets/images/frame.png" alt="frame">
-    <img class="frame bottom-0 right-0 " src="@/assets/images/INFERIORDERECHA.png" alt="frame">
-    <img class="frame bottom-0 left-0 esquinaDerecha" src="@/assets/images/INFERIORIZQUIERDA.png" alt="frame">
+    <img class="frame bottom-0 right-0 esquinaDerecha" src="@/assets/images/INFERIORDERECHA.png" alt="frame">
+    <img class="frame bottom-0 left-0 esquinaIzquierda" src="@/assets/images/INFERIORIZQUIERDA.png" alt="frame">
     <!-- Frames -->
     <!-- Wedding couple -->
     <div class="w-6/12 text-center text-xs md:text-lg lg:text-xl">
@@ -89,18 +96,15 @@ width: 50% !important;
 <script setup>
 
 import { ref } from 'vue'
+import { watch } from 'vue'
 import { computed } from 'vue'
 import { useState } from '@/stores/state.js'
 import { useRouter } from 'vue-router'
-
 const state = useState()
-const router = useRouter()
 const couples = ref(['Soy Mathías'])
 const weddingDate = ref('Noviembre, 11 del 2023')
-const isOpenInvitation = ref(false)
-state.isAudioPlay = true
-const openInvitation = () => {
 
+const openInvitation = () => {
   console.log('aaaaaa')
 }
 </script>

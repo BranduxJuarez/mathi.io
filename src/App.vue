@@ -8,9 +8,8 @@
 
 <template>
   <main class="app">
-    <router-view></router-view>
-    <!-- Mini Button -->
     <MiniButton></MiniButton>
+    <router-view></router-view>
   </main> 
 </template> 
  
