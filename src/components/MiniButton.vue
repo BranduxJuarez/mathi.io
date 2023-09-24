@@ -39,6 +39,7 @@ const control = () => {
   audioClick()
   audioAction()
 }
+audioClick()
 watch(isAudioPlay, control)
 
 </script>

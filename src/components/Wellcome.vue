@@ -36,7 +36,13 @@ width: 35% !important;
 }
 .esquinaIzquierda {
 width: 50% !important;
+}
 
+.esquinaIzquierda12 {
+  display: none !important;
+}
+.esquinaIzquierda123 {
+  display: none !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -57,7 +63,7 @@ width: 50% !important;
     /* top: 496px 
     animation: run 12s linear infinite alternate;
     */
-    animation: run 30s linear infinite ;
+    animation: run 15s linear infinite ;
     right: -19%;
   }
   .esquinaIzquierda {
@@ -65,6 +71,17 @@ width: 50% !important;
       top: 0px;
       rotate: 10px;
       transform: scaleY(-1);
+  }
+
+  .esquinaIzquierda12 {
+    display: block !important;
+    width: 100%;
+  }
+
+  .esquinaIzquierda123 {
+    display: block !important;
+    width: 100%;
+    transform: scaleX(-1);
   }
 }
 
@@ -81,6 +98,7 @@ width: 50% !important;
 .botonClick {
   animation: 1.3s botonClick infinite
 }
+
 
 @keyframes botonClick {
   20% {
@@ -221,6 +239,9 @@ width: 50% !important;
     <img class="frame top-0 right-0 animate__animated animate__fadeInRight superiorDerecha" src="@/assets/images/frame.png" alt="frame">
     <img class="frame bottom-0 right-0 esquinaDerecha" src="@/assets/images/INFERIORDERECHA.png" alt="frame">
     <img class="frame bottom-0 left-0 esquinaIzquierda" src="@/assets/images/INFERIORIZQUIERDA.png" alt="frame">
+    
+    <img class="frame bottom-0 left-0 esquinaIzquierda12" src="@/assets/images/INFERIORIZQUIERDA.png" alt="frame">
+    <img class="frame bottom-0 left-0 esquinaIzquierda123" src="@/assets/images/INFERIORIZQUIERDA.png" alt="frame">
     <!-- Frames -->
     <!-- Wedding couple -->
     <div class="w-6/12 text-center text-xs md:text-lg lg:text-xl contenido">
@@ -231,8 +252,11 @@ width: 50% !important;
         <p>{{ weddingDate }}</p>
         <h1 class="satisfy-font text-5xl lg:text-6xl my-4 text-green-600" style="color: #1b2937">{{ couples.join(' & ') }}</h1>
         <p>
-          Deseamos compartir contigo la inmesa alegria de su llegada
-          <br><b>¡No faltes!</b>
+            Deseamos compartir contigo la inmensa alegría de su llegada. 
+            <br>
+            Únetenos en un Baby Shower especial para celebrar este momento único.
+            <br>
+            <b>¡No faltes!</b>
         </p> 
         
        <!-- CTA -->
@@ -261,7 +285,10 @@ const couples = ref(['Soy Mathías'])
 const weddingDate = ref('Noviembre, 11 del 2023')
 
 const openInvitation = () => {
-  console.log('aaaaaa');
+
+  console.log('DESCASRGAR ARCHIVO');
+
+
   confetti({
     particleCount: 500,
     spread: 100,
