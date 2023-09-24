@@ -54,7 +54,11 @@ width: 50% !important;
   .esquinaDerecha {
     width: 80% !important;
     width: 66% !important;
-    /* top: 496px*/
+    /* top: 496px 
+    animation: run 12s linear infinite alternate;
+    */
+    animation: run 30s linear infinite ;
+    right: -19%;
   }
   .esquinaIzquierda {
       width: 84% !important;
@@ -91,6 +95,14 @@ width: 50% !important;
   100% {
     transform: translateY(-480px);
   }
+}
+@keyframes run{
+    0% { 
+      transform: translateX(0px) rotate(-90deg);
+    }
+     100% { 
+      transform: translateY(-1000px) rotate(-90deg);
+    }  
 }
 
 
@@ -187,15 +199,8 @@ width: 50% !important;
 }
 </style>
 <template>
-    <div class="box-canvas">
-      <div class="balloon-wrapper red">
-        <div class="string"></div>
-        <div class="balloon"></div>
-      </div>
-      <div class="balloon-wrapper green">
-        <div class="string"></div>
-        <div class="balloon"></div>
-      </div>
+    
+    <!-- <div class="box-canvas">
       <div class="balloon-wrapper orange">
         <div class="string"></div>
         <div class="balloon"></div>
@@ -208,8 +213,7 @@ width: 50% !important;
         <div class="string"></div>
         <div class="balloon"></div>
       </div>
-    </div>
-
+    </div> -->
 
   <section  class="w-full h-screen bg-slate-100 min-h-screen fixed inset-0 grid place-items-center z-50 bg-texture bg-cover">
     <!-- Frames -->
@@ -259,10 +263,10 @@ const weddingDate = ref('Noviembre, 11 del 2023')
 const openInvitation = () => {
   console.log('aaaaaa');
   confetti({
-  particleCount: 100,
-  spread: 70,
-  origin: { y: 0.6 }
-});
+    particleCount: 500,
+    spread: 100,
+    origin: { y: 0.6 }
+  });
 }
 
 </script>
