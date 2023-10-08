@@ -285,10 +285,9 @@ const couples = ref(['Soy Mathías'])
 const weddingDate = ref('Noviembre, 11 del 2023')
 
 const openInvitation = () => {
-
-  console.log('DESCASRGAR ARCHIVO');
-
-
+  debugger
+  const urlPDF = 'https://drive.google.com/uc?export=download&id=16qKin6sAmtPkO2ESZJrhNgGzAh1_Swkg';
+  window.open(urlPDF, '_blank');
   confetti({
     particleCount: 500,
     spread: 100,
