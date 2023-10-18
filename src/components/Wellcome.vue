@@ -282,11 +282,10 @@ import { useState } from '@/stores/state.js'
 import confetti  from "canvas-confetti/src/confetti.js";
 const state = useState()
 const couples = ref(['Soy Mathías'])
-const weddingDate = ref('Noviembre, 11 del 2023')
+const weddingDate = ref('Octubre, 27 del 2023')
 
 const openInvitation = () => {
-  debugger
-  const urlPDF = 'https://drive.google.com/uc?export=download&id=16qKin6sAmtPkO2ESZJrhNgGzAh1_Swkg';
+  const urlPDF = './src/assets/pdf/Mathias27Oct.pdf';
   window.open(urlPDF, '_blank');
   confetti({
     particleCount: 500,
