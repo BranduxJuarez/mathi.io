@@ -217,22 +217,6 @@ width: 50% !important;
 }
 </style>
 <template>
-    
-    <!-- <div class="box-canvas">
-      <div class="balloon-wrapper orange">
-        <div class="string"></div>
-        <div class="balloon"></div>
-      </div>
-      <div class="balloon-wrapper blue">
-        <div class="string"></div>
-        <div class="balloon"></div>
-      </div>
-      <div class="balloon-wrapper yellow">
-        <div class="string"></div>
-        <div class="balloon"></div>
-      </div>
-    </div> -->
-
   <section  class="w-full h-screen bg-slate-100 min-h-screen fixed inset-0 grid place-items-center z-50 bg-texture bg-cover">
     <!-- Frames -->
     <img class="frame top-0 left-0 animate__animated animate__fadeInLeft superiorIzquierda" src="@/assets/images/frame-mirror.png" alt="frame" >
@@ -269,6 +253,9 @@ width: 50% !important;
        </button>
        <canvas id="canvas" style="z-index: 99999999"></canvas>
        <!-- CTA -->
+
+           <a :href="urlPDF" download="nombre-del-archivo.pdf">Descargar PDF</a>
+
       </div>
     </div>
     <!-- Wedding couple -->
@@ -285,8 +272,12 @@ const couples = ref(['Soy Mathías'])
 const weddingDate = ref('Octubre, 27 del 2023')
 
 const openInvitation = () => {
-  const urlPDF = './src/assets/pdf/Mathias27Oct.pdf';
-  window.open(urlPDF, '_blank');
+  const archivoURL  = './src/assets/pdf/Mathias27Oct.pdf';
+  const nombreArchivo = 'archivo.pdf';
+  const enlace = document.createElement('a');
+  enlace.href = archivoURL;
+  enlace.download = nombreArchivo;
+  enlace.click();
   confetti({
     particleCount: 500,
     spread: 100,
