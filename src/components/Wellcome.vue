@@ -253,9 +253,6 @@ width: 50% !important;
        </button>
        <canvas id="canvas" style="z-index: 99999999"></canvas>
        <!-- CTA -->
-
-           <a :href="urlPDF" download="nombre-del-archivo.pdf">Descargar PDF</a>
-
       </div>
     </div>
     <!-- Wedding couple -->
@@ -270,10 +267,9 @@ import confetti  from "canvas-confetti/src/confetti.js";
 const state = useState()
 const couples = ref(['Soy Mathías'])
 const weddingDate = ref('Octubre, 27 del 2023')
-
 const openInvitation = () => {
   const archivoURL  = './src/assets/pdf/Mathias27Oct.pdf';
-  const nombreArchivo = 'archivo.pdf';
+  const nombreArchivo = 'babyShowerMathias.pdf';
   const enlace = document.createElement('a');
   enlace.href = archivoURL;
   enlace.download = nombreArchivo;
