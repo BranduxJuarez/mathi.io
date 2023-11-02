@@ -268,17 +268,20 @@ const state = useState()
 const couples = ref(['Soy Mathías'])
 const weddingDate = ref('Octubre, 27 del 2023')
 const openInvitation = () => {
-  const archivoURL  = './src/assets/pdf/Mathias27Oct.pdf';
-  const nombreArchivo = 'babyShowerMathias.pdf';
-  const enlace = document.createElement('a');
-  enlace.href = archivoURL;
-  enlace.download = nombreArchivo;
-  enlace.click();
   confetti({
     particleCount: 500,
     spread: 100,
     origin: { y: 0.6 }
   });
+  // const archivoURL  = './src/assets/pdf/Mathias27Oct.pdf'
+  const archivoURL  = 'https://drive.google.com/file/d/1eCZGf2ZujjFE2-JaHQ7SD2tOZibM6O9q/preview';
+  window.open(archivoURL, '_blank');
+
+  // const nombreArchivo = 'babyShowerMathias.pdf';
+  // const enlace = document.createElement('a');
+  // enlace.href = archivoURL;
+  // enlace.download = nombreArchivo;
+  // enlace.click();
 }
 
 </script>
