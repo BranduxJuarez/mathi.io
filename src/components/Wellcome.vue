@@ -274,7 +274,7 @@ const openInvitation = () => {
     origin: { y: 0.6 }
   });
   // const archivoURL  = './src/assets/pdf/Mathias27Oct.pdf'
-  const archivoURL  = 'https://drive.google.com/file/d/1eCZGf2ZujjFE2-JaHQ7SD2tOZibM6O9q/preview';
+  const archivoURL  = 'https://drive.google.com/file/d/1KLnTljZ9419y4iRZPx6WMJVmmyYYDgCU/preview';
   window.open(archivoURL, '_blank');
 
   // const nombreArchivo = 'babyShowerMathias.pdf';
