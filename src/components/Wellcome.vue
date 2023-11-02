@@ -266,7 +266,7 @@ import { useState } from '@/stores/state.js'
 import confetti  from "canvas-confetti/src/confetti.js";
 const state = useState()
 const couples = ref(['Soy Mathías'])
-const weddingDate = ref('Octubre, 27 del 2023')
+const weddingDate = ref('Noviembre, 12 del 2023')
 const openInvitation = () => {
   confetti({
     particleCount: 500,
